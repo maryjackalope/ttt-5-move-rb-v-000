@@ -2,4 +2,27 @@
 
 require_relative '../lib/move.rb'
 
+puts "Welcome to Tic Tac Toe!"
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Where would you like to go?
+
+input = gets.strip
+
+index = input_to_index(input)
+
+new_board = move(board, index, "X")
+
+display_board(new_board)
+
+index= 
+def update_array_at_with(array, index, value)
+  array[index] = value
+end
+ 
+update_array_at_with(board, 0, "X")
+# The element at index 0 of array 'board' is set to the value "X"
+board #=> ["X", " ", " "]
+
 # Code your CLI Here
