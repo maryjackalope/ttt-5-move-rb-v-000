@@ -7,8 +7,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-puts "Where would you like to go?"
-
 def input_to_index(user_input)
   user_input.to_i - 1
 end
